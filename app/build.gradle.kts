@@ -11,18 +11,14 @@ dependencies {
     implementation(project(":utilities"))
 }
 
-tasks.register("task1"){
-    dependsOn(tasks.classes)
+tasks.register("mytask"){
     group = "Custom"
     description = "A custom task"
 }
 
-tasks.named("task1"){  
+tasks.named("mytask"){  
     doFirst {
-        println("NAMED TASK1 - doFirst: This is executed during the execution phase")
-    }
-    doLast {
-        println("NAMED TASK1 - doLast: This is executed during the execution phase")
+        println("This is my task!")
     }
 }
 
