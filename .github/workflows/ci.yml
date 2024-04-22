@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Start CI run
-        run: 'npx nx-cloud start-ci-run --distribute-on="5 linux-medium-js"'
+        run: 'npx nx-cloud start-ci-run --distribute-on="5 java-linux-medium-js"'
 
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
