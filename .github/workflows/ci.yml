@@ -40,4 +40,4 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
 
       # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
-      - run: ./nx run-many -t build
+      - run: ./gradlew :app:build && ./gradlew :list:build && ./gradlew :utilities:build
