@@ -1,0 +1,29 @@
+{
+  "targetDefaults": {
+    "build": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    },
+    "e2e": {
+      "cache": true
+    }
+  },
+  "plugins": [
+    {
+      "plugin": "@nx/gradle",
+      "options": {
+        "testTargetName": "test",
+        "classesTargetName": "classes",
+        "buildTargetName": "build",
+        "ciTestTargetName": "test-ci"
+      }
+    }
+  ],
+  "nxCloudAccessToken": "Yzk2YWZmNWUtYjNlOC00ZTJiLWFkNzctOTRlNzRlMzVlZDcwfHJlYWQtd3JpdGU=",
+  "nxCloudUrl": "https://cloud.nx.app/"
+}
